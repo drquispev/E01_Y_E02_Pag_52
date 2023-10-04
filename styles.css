@@ -1,0 +1,107 @@
+/*.body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffa500;
+    transition: .5s;
+}
+
+.Minifondo {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    width: 100%;
+    height: 420px;
+    background: rgba(255, 255, 255, .2);
+}
+.table-box {
+    position: relative;
+    background: #fff;
+    height: 100%;
+    width: 50%;
+    /*top: 0;
+    left: 0;*/
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: ease-in-out;
+}
+
+/*#miTabla {
+    width: calc(10% - 10px); 
+    background-color: #f0f0f0; 
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}*/
+.form-box{
+    position: relative;
+    width: 500px;
+    height: 550px;
+    background: transparent;
+    border: 4px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+legend {
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 1px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+    align-items: center;
+}
+
+.inputbox label {
+    position: relative;
+    top: 50%;
+    left: 5px;
+    width: 20%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.inputbox input {
+    width: 80%;
+    height: 10px;
+    background: transparent;
+    border: none;
+    /*outline: none;*/
+    font-size: 1em;
+    padding: 35px 0 5px;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}

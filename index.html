@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PRÁCTICA 03</title>
+</head>
+<body>
+    <section class="Minifondo">
+    <div class="form-box">
+        <form class="form-value" id="Form_01">
+            <legend>Ingresar datos:</legend>
+            <div class="desplegable">   
+                <label for="field05">Número de semillas: </label>
+                <span class="number">1</span>
+                <input type="range" id="field05" name="rango" min="1" max="5" step="1" value="1">
+            </div>
+            <div id="contenedor"></div>
+
+            <fieldset id="data_set">
+            
+                <div class="inputbox">
+                    <label for="field010">X <sub>0</sub></label>
+                    <input type="number" id="field010">
+                </div>
+                <div class="inputbox">
+                    <label for="field020">a</label>
+                    <input type="number" id="field020">
+                </div class="inputbox">
+                <div class="inputbox">
+                    <label for="field03">c</label>
+                    <input type="number" id="field03">
+                </div>
+                <div class="inputbox">
+                    <label for="field04">m</label>
+                    <input type="number" id="field04">
+                </div>
+            </fieldset>
+            <button type="button" id="button_calculate">Calcular</button>
+            <script src="E01.js"></script>
+        </form>
+    </div>
+    <div class="table-box" id="table_ri">
+        <table id="miTabla"></table>
+    </div>
+    </section>  
+</body>
+</html>
