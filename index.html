@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Russo One,  Comfortaa, Comic Neue-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Comic+Neue:ital,wght@0,300;0,400;1,300&family=Russo+One&display=swap" rel="stylesheet">
+    
     <title>PRÁCTICA 03</title>
 </head>
 <body>
@@ -11,17 +16,19 @@
     <div class="form-box">
         <form class="form-value" id="Form_01">
             <legend>Ingresar datos:</legend>
-            <div class="desplegable">   
+            <div class="desplegable">  
                 <label for="field05">Número de semillas: </label>
-                <span class="number">1</span>
+                <div class="Linea"></div> 
                 <input type="range" id="field05" name="rango" min="1" max="5" step="1" value="1">
+                <div class="Linea"></div> 
+                <span class="number">1</span>
             </div>
             <div id="contenedor"></div>
 
             <fieldset id="data_set">
             
                 <div class="inputbox">
-                    <label for="field010">X <sub>0</sub></label>
+                    <label for="field010">X<sub>0</sub></label>
                     <input type="number" id="field010">
                 </div>
                 <div class="inputbox">
@@ -42,8 +49,11 @@
         </form>
     </div>
     <div class="table-box" id="table_ri">
-        <table id="miTabla"></table>
-    </div>
-    </section>  
+        <table class="miTabla" id="miTabla"></table>
+    </div> 
+    </section> 
+    <section class="Minifondo2">
+        
+    </section>
 </body>
 </html>

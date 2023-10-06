@@ -2,34 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-}*/
-body {
+}
+/*body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #ffa500;
     transition: .5s;
-}
+}*/
 
 .Minifondo {
     position: absolute;
-    top: 40px;
+    top: 1%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*min-height: 100vh;*/
+    min-height: 200vh;
+    gap: 80px;
     width: 100%;
-    height: 420px;
-    background: rgba(255, 255, 255, .2);
+    height: 400px;
+    background: greenyellow;
 }
+
+/*
 .table-box {
     position: relative;
     background: #fff;
     height: 100%;
     width: 50%;
-    /*top: 0;
-    left: 0;*/
+    top: 250px;
+    left: 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -38,7 +42,11 @@ body {
     transition: ease-in-out;
 }
 
-/*#miTabla {
+.table-box th{ 
+    gap: 20px;
+}
+
+#miTabla {
     width: calc(10% - 10px); 
     background-color: #f0f0f0; 
     padding: 8px;
@@ -49,59 +57,208 @@ body {
     position: relative;
     width: 500px;
     height: 550px;
-    background: transparent;
+    background: white;
     border: 4px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
+    flex-direction: column;
+    /*gap: 200px;*/
     justify-content: center;
     align-items: center;
+    overflow: visible;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 legend {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
     font-size: 2em;
-    color: aliceblue;
+    color: black;
+    background: white;
+    vertical-align: middle;
     text-align: center;
     border: 4px solid black;
-    border-radius: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    /*font-family: 'Comfortaa', cursive;*/
+    /*font-family: 'Russo One', sans-serif;*/
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+
+/*BARRA DESPLEGLABLE*/
+.desplegable {
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    height: 15%;
+    gap: 20px;
+    background: white;
+    font-family: 'Comic Neue', cursive;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.desplegable label {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.desplegable span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Linea {
+    border: none; 
+    border-left: 4px solid #000; 
+    height: 100%;
+}
+
+/*INGRESAR DATOS*/
+fieldset {
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background: white;
 }
 
 .inputbox {
     position: relative;
-    margin: 1px 0;
+    display: flex;
+    gap: 50px;
     width: 310px;
-    border-bottom: 2px solid #fff;
     align-items: center;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
 }
 
 .inputbox label {
-    position: relative;
-    top: 50%;
-    left: 5px;
-    width: 20%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 1em;
-    pointer-events: none;
+    height: 25px;
+    width: 45px;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 6px;
 }
 
 .inputbox input {
-    width: 80%;
-    height: 10px;
+    width: 200px;
+    height: 1px;
     background: transparent;
     border: none;
-    /*outline: none;*/
+    outline: none;
     font-size: 1em;
-    padding: 35px 0 5px;
-    color: #fff;
+    padding: 12px 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 6px;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
 }
 
 button {
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    background: #fff;
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    background: black;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    color: aliceblue;
 }
+
+/*DISEÑO DE LA TABLA*/
+.table-box {
+    border-collapse: collapse;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 12px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-items: center;
+    background: white;
+    width: 500px;
+}
+
+/*.table-box tr th {
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 8px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    background: #000;
+    color: aliceblue;
+}*/
+
+.miTabla {
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+.tr_table_ri{
+    justify-content: center;
+    /*display: flex;*/
+    width: 100%;
+    height: 50px;
+    /*gap: 80px;*/
+    background: white;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.th_table_ri {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    /*width: 100%;*/
+}
+
+
+
+.td_table_ri {
+    text-align: center;
+    align-items: center;
+    font-family: 'Comic Neue', cursive;
+    width: 100%;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 20%; /* Primera columna más pequeña */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%; /* Segunda columna más grande */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 60%; /* Tercera columna más grande */
+}
+
+    /*border: 4px solid black;
+    border-radius: 8px;
+}*/

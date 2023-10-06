@@ -69,7 +69,7 @@ function Determine_Period_II(numero) {
         console.log(Maux[i],Xo[long_Xo - cont])
     }
     cont = 0;//MOD
-    
+
     // AGREGAR LA NUEVA SEMILLA
     Xo.push(Xn);
     console.log(`a: ${a}`,`Xo ${Xo}`,`Maux: ${Maux}`,`Xn: ${Xn}`);
@@ -122,13 +122,19 @@ function Determine_Period_II(numero) {
     var tabla = document.createElement("miTabla");
     //var encabezadoFila = document.createElement("tr");
     var encabezadoFila = document.createElement("tr");
-
+    encabezadoFila.className = "tr_table_ri"
 // Crear las celdas de encabezado (th) y asignarles contenido
     var encabezado1 = document.createElement("th");
+    encabezado1.className = "th_table_ri";
+    encabezado1.id = "th_encabezado1";
     encabezado1.textContent = "i";
     var encabezado2 = document.createElement("th");
+    encabezado2.className = "th_table_ri";
+    encabezado2.id = "th_encabezado2";
     encabezado2.textContent = "Xi+1";
     var encabezado3 = document.createElement("th");
+    encabezado3.className = "th_table_ri";
+    encabezado3.id = "th_encabezado3";
     encabezado3.textContent = "ri";
 
 // Agregar las celdas de encabezado a la fila de encabezado
@@ -141,9 +147,10 @@ function Determine_Period_II(numero) {
 
     Matrix_Print.forEach(function(fila){
         var filaElemento = document.createElement("tr");
-
+        filaElemento.className = "tr_table_ri"
         fila.forEach(function(elemento){
             var celda = document.createElement("td");
+            celda.className = "td_table_ri"
             celda.textContent = elemento;
             filaElemento.appendChild(celda);
         });
@@ -159,7 +166,10 @@ function Update_Form(numero) {
     const divContenedorx = document.createElement('div');
     divContenedorx.className = "inputbox";
     const labelx = document.createElement("label");
-    labelx.textContent = `X ${numero}: `;
+    const subx = document.createElement("sub");
+    subx.textContent = `${numero}`
+    labelx.textContent = `X`;
+    labelx.appendChild(subx);
     const inputx = document.createElement("input");
     inputx.type = "number";
     inputx.id = `field01${numero}`;
@@ -169,7 +179,10 @@ function Update_Form(numero) {
     const divContenedora = document.createElement('div');
     divContenedora.className = "inputbox";
     const labela = document.createElement("label");
-    labela.textContent = `a ${numero}: `;
+    const suba = document.createElement("sub");
+    suba.textContent = `${numero}`
+    labela.textContent = `a`;
+    labela.appendChild(suba);
     const inputa = document.createElement("input");
     inputa.type = "number";
     inputa.id = `field02${numero}`;
@@ -212,7 +225,6 @@ function Update_FormII() {
     divContenedorm.appendChild(labelm);
     divContenedorm.appendChild(inputm);
     contenedor.appendChild(divContenedorm);
-
 }
 
 
